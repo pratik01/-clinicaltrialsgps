@@ -1,0 +1,105 @@
+<%= form_for(@clinical_study) do |f| %>
+  <% if @clinical_study.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@clinical_study.errors.count, "error") %> prohibited this clinical_study from being saved:</h2>
+
+      <ul>
+      <% @clinical_study.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :download_date %><br>
+    <%= f.text_field :download_date %>
+  </div>
+  <div class="field">
+    <%= f.label :link_text %><br>
+    <%= f.text_field :link_text %>
+  </div>
+  <div class="field">
+    <%= f.label :url %><br>
+    <%= f.text_field :url %>
+  </div>
+  <div class="field">
+    <%= f.label :brief_title %><br>
+    <%= f.text_field :brief_title %>
+  </div>
+  <div class="field">
+    <%= f.label :official_title %><br>
+    <%= f.text_field :official_title %>
+  </div>
+  <div class="field">
+    <%= f.label :agency %><br>
+    <%= f.text_field :agency %>
+  </div>
+  <div class="field">
+    <%= f.label :agency_class %><br>
+    <%= f.text_field :agency_class %>
+  </div>
+  <div class="field">
+    <%= f.label :source %><br>
+    <%= f.text_field :source %>
+  </div>
+  <div class="field">
+    <%= f.label :authority %><br>
+    <%= f.text_field :authority %>
+  </div>
+  <div class="field">
+    <%= f.label :brief_summary %><br>
+    <%= f.text_area :brief_summary %>
+  </div>
+  <div class="field">
+    <%= f.label :detailed_description %><br>
+    <%= f.text_area :detailed_description %>
+  </div>
+  <div class="field">
+    <%= f.label :overall_status %><br>
+    <%= f.text_field :overall_status %>
+  </div>
+  <div class="field">
+    <%= f.label :start_date %><br>
+    <%= f.text_field :start_date %>
+  </div>
+  <div class="field">
+    <%= f.label :phase %><br>
+    <%= f.text_field :phase %>
+  </div>
+  <div class="field">
+    <%= f.label :study_type %><br>
+    <%= f.text_field :study_type %>
+  </div>
+  <div class="field">
+    <%= f.label :study_design %><br>
+    <%= f.text_field :study_design %>
+  </div>
+  <div class="field">
+    <%= f.label :condition %><br>
+    <%= f.text_field :condition %>
+  </div>
+  <div class="field">
+    <%= f.label :intervention_type %><br>
+    <%= f.text_field :intervention_type %>
+  </div>
+  <div class="field">
+    <%= f.label :intervention_name %><br>
+    <%= f.text_field :intervention_name %>
+  </div>
+  <div class="field">
+    <%= f.label :last_name %><br>
+    <%= f.text_field :last_name %>
+  </div>
+  <div class="field">
+    <%= f.label :role %><br>
+    <%= f.text_field :role %>
+  </div>
+  <div class="field">
+    <%= f.label :affiliation %><br>
+    <%= f.text_field :affiliation %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

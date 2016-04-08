@@ -1,0 +1,69 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Clinical Studies</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Download date</th>
+      <th>Link text</th>
+      <th>Url</th>
+      <th>Brief title</th>
+      <th>Official title</th>
+      <th>Agency</th>
+      <th>Agency class</th>
+      <th>Source</th>
+      <th>Authority</th>
+      <th>Brief summary</th>
+      <th>Detailed description</th>
+      <th>Overall status</th>
+      <th>Start date</th>
+      <th>Phase</th>
+      <th>Study type</th>
+      <th>Study design</th>
+      <th>Condition</th>
+      <th>Intervention type</th>
+      <th>Intervention name</th>
+      <th>Last name</th>
+      <th>Role</th>
+      <th>Affiliation</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @clinical_studies.each do |clinical_study| %>
+      <tr>
+        <td><%= clinical_study.download_date %></td>
+        <td><%= clinical_study.link_text %></td>
+        <td><%= clinical_study.url %></td>
+        <td><%= clinical_study.brief_title %></td>
+        <td><%= clinical_study.official_title %></td>
+        <td><%= clinical_study.agency %></td>
+        <td><%= clinical_study.agency_class %></td>
+        <td><%= clinical_study.source %></td>
+        <td><%= clinical_study.authority %></td>
+        <td><%= clinical_study.brief_summary %></td>
+        <td><%= clinical_study.detailed_description %></td>
+        <td><%= clinical_study.overall_status %></td>
+        <td><%= clinical_study.start_date %></td>
+        <td><%= clinical_study.phase %></td>
+        <td><%= clinical_study.study_type %></td>
+        <td><%= clinical_study.study_design %></td>
+        <td><%= clinical_study.condition %></td>
+        <td><%= clinical_study.intervention_type %></td>
+        <td><%= clinical_study.intervention_name %></td>
+        <td><%= clinical_study.last_name %></td>
+        <td><%= clinical_study.role %></td>
+        <td><%= clinical_study.affiliation %></td>
+        <td><%= link_to 'Show', clinical_study %></td>
+        <td><%= link_to 'Edit', edit_clinical_study_path(clinical_study) %></td>
+        <td><%= link_to 'Destroy', clinical_study, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Clinical study', new_clinical_study_path %>

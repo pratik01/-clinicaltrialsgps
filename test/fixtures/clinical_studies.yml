@@ -1,0 +1,49 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  download_date: MyString
+  link_text: MyString
+  url: MyString
+  brief_title: MyString
+  official_title: MyString
+  agency: MyString
+  agency_class: MyString
+  source: MyString
+  authority: MyString
+  brief_summary: MyText
+  detailed_description: MyText
+  overall_status: MyString
+  start_date: MyString
+  phase: MyString
+  study_type: MyString
+  study_design: MyString
+  condition: MyString
+  intervention_type: MyString
+  intervention_name: MyString
+  last_name: MyString
+  role: MyString
+  affiliation: MyString
+
+two:
+  download_date: MyString
+  link_text: MyString
+  url: MyString
+  brief_title: MyString
+  official_title: MyString
+  agency: MyString
+  agency_class: MyString
+  source: MyString
+  authority: MyString
+  brief_summary: MyText
+  detailed_description: MyText
+  overall_status: MyString
+  start_date: MyString
+  phase: MyString
+  study_type: MyString
+  study_design: MyString
+  condition: MyString
+  intervention_type: MyString
+  intervention_name: MyString
+  last_name: MyString
+  role: MyString
+  affiliation: MyString
